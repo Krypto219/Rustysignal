@@ -252,7 +252,7 @@ pub fn run() {
     #[cfg(feature = "ssl")]
     let encrypt_server = true;
     #[cfg(not(feature = "ssl"))]
-    let encrypt_server = false;
+    let encrypt_server = true;
 
     ws::Builder::new()
         .with_settings(ws::Settings {
